@@ -6,6 +6,14 @@ plugins {
     `maven-publish`
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
     id("io.papermc.paperweight.core") version "1.5.5"
+    id("org.sonarqube") version "4.2.1.3168"
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "Newproject")
+    property("sonar.projectName", "Newproject")
+  }
 }
 
 allprojects {
